@@ -1,6 +1,7 @@
-## This code snippet allow you to download SEC filings for US public companies using their ticker symbol.
+# Introduction
 
-** It was tested on Python 3.12 with a completion time of less than 2 minutes.**
+This code snippet allows you to download SEC filings for US public companies using their ticker symbol.
+It was tested on Python 3.12 with a completion time of less than 2 minutes.
 
 ## The following procedures may be followed to use the program:
 
