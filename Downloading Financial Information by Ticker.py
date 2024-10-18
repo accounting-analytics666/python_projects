@@ -44,5 +44,5 @@ for tag in tags:
                 data_all['company'] = ticker                
                 data = pd.concat([data, data_all],join = 'outer') 
 
-# Save to an Excel file
+# Save to a CSV file
 data.to_csv('secfilings.csv')
