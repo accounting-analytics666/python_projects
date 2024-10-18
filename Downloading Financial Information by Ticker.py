@@ -16,7 +16,7 @@ ciks_all['cik_str']=ciks_all['cik_str'].astype(str).str.zfill(10)
 # Request input for the ticker symbol of a company
 
 ticker = str(input("Please enter the company's ticker:"))
-cik = ciks_all[ciks_all['ticker'] == ticker]['cik_str'][0]
+cik = ciks_all[ciks_all['ticker'] == ticker]['cik_str'].iloc[0]
 
 # Get facts
 
@@ -41,6 +41,7 @@ for tag in tags:
                 data_all = pd.DataFrame(concepts.json()['units'][j])
                 data_all['acct'] = tag
                 data_all['unit'] = j
+		data_all['ticker'] = ticker
                 data = pd.concat([data, data_all],join = 'outer') 
 
 # Save to an Excel file
