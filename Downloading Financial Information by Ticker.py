@@ -41,7 +41,7 @@ for tag in tags:
                 data_all = pd.DataFrame(concepts.json()['units'][j])
                 data_all['acct'] = tag
                 data_all['unit'] = j
-		data_all['ticker'] = ticker
+                data_all['ticker'] = ticker
                 data = pd.concat([data, data_all],join = 'outer') 
 
 # Save to an Excel file
