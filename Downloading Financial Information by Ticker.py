@@ -7,7 +7,7 @@ import openpyxl
 
 headers = {'User-Agent': 'YOUREMAIL@DOMAINNAME.com'}
 
-# Get all companies' CIKs test test test
+# Get all companies' CIKs
 
 ciks = requests.get("https://www.sec.gov/files/company_tickers.json", headers = headers)
 ciks_all = pd.DataFrame(ciks.json()).T
